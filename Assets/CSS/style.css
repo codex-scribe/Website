@@ -1,0 +1,187 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, sans-serif;
+  }
+
+header {
+    display:flex;
+    background-color:midnightblue;
+    color:lavender;
+    justify-content: space-between;
+    height:6rem;
+    align-items: center;
+}
+
+header h1 {
+    font-size:3rem;
+    margin-left:20px;
+}
+
+
+
+
+nav ul {
+    display:flex;
+    justify-content: flex-end;
+    align-content:center;
+}
+
+nav li a {
+    padding:20px;
+    background: lavender;
+    color:black;
+    border:1px;
+    border-style: solid;
+    border-color: black;
+    margin:10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    max-width:1000px;
+}
+
+main .chunk {
+    display:flex;
+    flex-direction: row;
+}
+
+a:link {
+    text-decoration:none;
+}
+.chunk h2 {
+    display:flex;
+    width:20%;
+    justify-content: center;
+    align-items: flex-start;
+    padding:10px;
+}
+
+/* #Portfolio div {
+    width:80%;
+    display:flex;
+    flex-direction: column;
+} */
+
+#icons {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#icons, .text {
+    width:80%;
+}
+#toprow {
+    width:100%;
+}
+
+/*#bottomrow {
+    display:flex;
+    flex-direction: row;
+} */
+
+/* #bottomrow .creation {
+    width: 50%;
+}*/
+
+.text {
+    margin:5px;
+    line-height: 1.5;
+}
+.creation img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text ul {
+    list-style-type: circle;
+}
+
+
+.creation {
+    border-width:1px;
+    border-style:solid;
+    border-color: midnightblue;
+    margin:5px;
+    padding:10px;
+    width:45%;
+}
+
+#icons:first-child {
+    width:90%;
+}
+
+.creation:hover {
+    border-width:4px;
+    padding:7px;
+}
+
+.creation p {
+    padding:10px 0px;
+}
+
+footer {
+    display:flex;
+    justify-content: center;    
+}
+
+footer p {
+    font-size: .7rem;
+}
+@media screen and (max-width: 847px) {
+    header {
+        display:flex;
+        flex-direction:column; 
+        height:6rem;
+        text-align: center;
+    }
+    header h1 {
+        margin-left:0px;
+    }
+
+    nav {
+        width:100%;
+    }
+    nav ul {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    nav li {
+        line-height:1.5rem;
+    }
+
+    nav li a {
+        padding:0px;
+        background:none;
+        color: lavender;
+        border:0px;
+        border-style: none;
+        border-color: none;
+        margin:0px;
+        border-radius: 0px;
+        cursor: pointer;
+    }
+    
+    
+    #icons {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .creation {
+        width:100%;
+    }
+  } 
+
+  @media screen and (max-width: 465px) {
+    header {
+        height:8rem;
+    }
+  }
